@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="logReg.css">
+    <title>Account Login</title>
+</head>
+<body>
+    <div class="slideshow">
+        <img src="https://c4.wallpaperflare.com/wallpaper/553/808/884/food-fazer-chocolate-wallpaper-preview.jpg" alt="Choco">
+        <img src="https://images2.alphacoders.com/129/1292932.jpg" alt="Choco">
+        <img src="https://images4.alphacoders.com/284/284054.jpg" alt="Choco">
+        <img src="https://images7.alphacoders.com/111/1114133.jpg" alt="Choco">
+    </div>
+    <div class="container">
+        <div class="tabs">
+            <div class="tab active" id="login-tab">Login</div>
+            <div class="tab" id="register-tab">Register</div>
+        </div>
+        <div class="form-container active" id="login-form">
+            <form id="loginForm">
+                <label for="login-username">Username</label>
+                <input type="text" id="login-username" name="username" required>
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        <div class="form-container" id="register-form">
+            <form id="registerForm">
+                <label for="register-username">Username</label>
+                <input type="text" id="register-username" name="username" required>
+                <label for="register-email">Email</label>
+                <input type="email" id="register-email" name="email" required>
+                <label for="register-password">Password</label>
+                <input type="password" id="register-password" name="password" required>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+    
+    <script defer src="logReg.js"></script>
+</body>
+</html>

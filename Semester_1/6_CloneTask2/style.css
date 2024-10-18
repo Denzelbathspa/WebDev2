@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Teko:wght@300..700&display=swap');
+
+/*Default Settings*/
+body{
+    background-color: #4DCCBD;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #231651;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 16px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.685); 
+}
+
+button{
+    font-size: 2em;
+}
+
+nav button{
+    border-radius: 16px;
+    padding: 16px;
+    margin: 0;
+}
+
+nav h1{
+    margin: 0;
+    color: #EEF36A;
+}
+
+ol {
+    list-style: none;
+    display: flex;
+    gap: 48px;
+    padding: 16px;
+    margin: 16px;
+}
+
+ol a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+h1{
+    font-family: "Teko", sans-serif;
+}
+
+section button{
+    font-family: "Teko", sans-serif;
+    margin: 16px;
+    border-radius: 16px;
+}
+
+p{
+    padding: 16px;
+}
+
+div{
+    height: 100%;
+    justify-content: space-between;
+}
+
+#content{
+    max-width: 900px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 1.5em;
+}
+
+.sectionBG{
+    background-color: #EEF36A;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.685);
+    display: flex;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+/*Responsive Designs*/
+/*Mobile*/
+@media (max-width: 720px) {
+    h1{
+        font-size: 2em;
+    }
+
+    #content{
+        margin: 16px auto;
+    }
+
+    nav ol{
+        display: none;
+    }
+
+    /*Section 1*/
+    #section1{
+        flex-direction: column;
+    }
+
+    #section1 div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #section1 div button{
+        width: 95%;
+        padding: 16px;
+        flex-grow: 1;
+    }
+
+    /*Section 2*/
+    #section2{
+        flex-direction: column;
+    }
+
+    #section2 div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #section2 div button{
+        width: 95%;
+        padding: 16px;
+        flex-grow: 1;
+    }
+
+    /*Section 3*/
+    #section3{
+        flex-direction: column;
+    }
+
+    #section3 div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #section3 div button{
+        width: 95%;
+        padding: 16px;
+        flex-grow: 1;
+    }
+
+    /*Section 4*/
+    #section4{
+        flex-direction: column;
+    }
+
+    #section4 div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #section4 div button{
+        width: 95%;
+        padding: 16px;
+        flex-grow: 1;
+    }
+
+    /*Section 5*/
+    #section5{
+        flex-direction: column;
+    }
+
+    #section5 div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #section5 div button{
+        width: 95%;
+        padding: 16px;
+        flex-grow: 1;
+    }
+
+    /*Section 6*/
+    #section6{
+        flex-direction: column;
+    }
+
+    #section6 div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #section6 div button{
+        width: 95%;
+        padding: 16px;
+        flex-grow: 1;
+    }
+}
+
+/*Tablet*/
+@media (min-width: 720px) and (max-width: 1024px) {
+    h1{
+        font-size: 3em;
+    }
+
+    #content{
+        margin: 32px auto;
+    }
+    
+    ol {
+        list-style: none;
+        display: flex;
+        gap: 16px;
+        padding: 16px;
+        margin: 16px;
+    }
+
+    ol a{
+        color: #FFFFFF;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    /*Section 1*/
+    #section1{
+        width: 40%;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    #section1 div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #section1 div button{
+        width: 92%;
+        padding: 16px;
+        flex-grow: 1;
+    }
+
+    /*Section 2*/
+    #section2{
+        width: 40%;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    #section2 div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #section2 div button{
+        width: 92%;
+        padding: 16px;
+        flex-grow: 1;
+    }
+
+    /*Section 3*/
+    #section3{
+        width: 40%;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    #section3 div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #section3 div button{
+        width: 92%;
+        padding: 16px;
+        flex-grow: 0;
+    }
+    
+    /*Section 4*/
+    #section4{
+        width: 40%;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    #section4 div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #section4 div button{
+        width: 92%;
+        padding: 16px;
+        flex-grow: 1;
+    }
+
+    /*Section 5*/
+    #section5{
+        width: 40%;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    #section5 div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #section5 div button{
+        width: 92%;
+        padding: 16px;
+        flex-grow: 0;
+    }
+
+    /*Section 6*/
+    #section6{
+        width: 40%;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    #section6 div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #section6 div button{
+        width: 92%;
+        padding: 16px;
+        flex-grow: 1;
+    }
+}
+
+/*Desktop*/
+@media (min-width: 1024px) {
+    h1{
+        font-size: 3em;
+    }
+
+    #content{
+        margin: 48px auto;
+    }
+
+    /*Section 1*/
+    #section1{
+        flex-direction: column;
+    }
+    
+    #section1 img{
+        max-height: 400px;
+    }
+
+    #section1 div{
+        display: flex;
+    }
+
+    #section1 div button{
+        width: 100%;
+        padding: 16px;
+        flex-grow: 1;
+    }
+
+    /*Section 2*/
+    #section2{
+        width: 40%;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    #section2 div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #section2 div button{
+        width: 92%;
+        padding: 16px;
+        flex-grow: 1;
+    }
+
+    /*Section 3*/
+    #section3{
+        width: 40%;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    #section3 div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #section3 div button{
+        width: 92%;
+        padding: 16px;
+        flex-grow: 0;
+    }
+    
+    /* Section 4 */
+    #section4 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #section4 img {
+        max-height: 450px;
+        width: auto;
+        flex: 1;
+    }
+
+    #section4 div {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    #section4 div button {
+        width: 92%;
+        padding: 16px;
+    }
+
+    /* Section 5 */
+    #section5 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #section5 img {
+        max-height: 450px;
+        width: auto;
+        flex: 1;
+    }
+
+    #section5 div {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    #section5 div button {
+        width: 92%;
+        padding: 16px;
+    }
+    
+    /* Section 6 */
+    #section6 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #section6 img {
+        max-height: 450px;
+        width: auto;
+        flex: 1;
+    }
+
+    #section6 div {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    #section6 div button {
+        width: 92%;
+        padding: 16px;
+    }
+}

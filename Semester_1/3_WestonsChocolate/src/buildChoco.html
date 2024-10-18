@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Build a Choco Box!</title>
+  <link rel="stylesheet" href="buildChoco.css">
+</head>
+<body>
+    <!-- Chocolate selections -->
+    <h3>Drag and Drop the Chocolates to the BOX!</h3>
+    <div id="chocolates">
+      <div class="chocolate" draggable="true" id="chocolate1" ondragstart="drag(event)">🌰</div>
+      <div class="chocolate" draggable="true" id="chocolate2" ondragstart="drag(event)">🥮</div>
+      <div class="chocolate" draggable="true" id="chocolate3" ondragstart="drag(event)">🍩</div>
+      <div class="chocolate" draggable="true" id="chocolate4" ondragstart="drag(event)">🍪</div>
+      <div class="chocolate" draggable="true" id="chocolate5" ondragstart="drag(event)">🍰</div>
+      <div class="chocolate" draggable="true" id="chocolate6" ondragstart="drag(event)">🥧</div>
+      <div class="chocolate" draggable="true" id="chocolate7" ondragstart="drag(event)">🥞</div>
+      <div class="chocolate" draggable="true" id="chocolate8" ondragstart="drag(event)">🍫</div>
+    </div>
+
+    <!-- box size drop down -->
+    <label for="box-size">Box Size:</label>
+    <select id="box-size" onchange="setBoxSize()">
+      <option value="4">4 Chocolates</option>
+      <option value="6">6 Chocolates</option>
+      <option value="9">9 Chocolates</option>
+    </select>
+
+    <!-- Box where chocolates will be dropped -->
+    <button id="purchase-button" onclick="purchaseItems()">Purchase</button>
+    <div id="box" class="box"></div>
+
+    <script src="buildChoco.js"></script>
+</body>
+</html>

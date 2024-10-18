@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS flex box</title>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#card">Card Component</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#quiz">Quiz</a></li>
+            <li><a href="#todo">To-do List</a></li>
+        </ul>
+    </nav>
+
+    <!-- Card Component -->
+    <section id="card" class="card">
+        <img src="https://media.cnn.com/api/v1/images/stellar/prod/231227082456-01-airplane-landing-stock.jpg?c=original" alt="Card Image">
+        <h3>Airplane on a sunset</h3>
+        <p>Want to travel the world? Here are some pictures to see if your knowledge is up to standard.</p>
+    </section>
+
+    <!-- Responsive Image Gallery -->
+    <section id="gallery">
+        <h2>Photos of clouds</h2>
+        <div class="gallery">
+            <img src="https://img.freepik.com/free-photo/cloud-blue-sky_1150-35749.jpg" alt="Image 1">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/94/Cloud.jpg" alt="Image 2">
+            <img src="https://images.unsplash.com/photo-1509803874385-db7c23652552?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8fA%3D%3D" alt="Image 3">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Cumulus_cloud.jpg" alt="Image 4">
+        </div>
+    </section>
+
+    <!-- Quiz Layout -->
+    <section id="quiz">
+        <h2>Airplane Quiz</h2>
+        <div class="quiz">
+            <!-- First Question -->
+            <div class="quiz-question">
+                <h4>1. What is the name of the first airplane to successfully fly?</h4>
+                <div class="quiz-options">
+                    <label><input type="radio" name="q1"> Wright Flyer</label>
+                    <label><input type="radio" name="q1"> Boeing 747</label>
+                    <label><input type="radio" name="q1"> Concorde</label>
+                </div>
+            </div>
+
+            <!-- Second Question -->
+            <div class="quiz-question">
+                <h4>2. Which company manufactures the Airbus A380?</h4>
+                <div class="quiz-options">
+                    <label><input type="radio" name="q2"> Airbus</label>
+                    <label><input type="radio" name="q2"> Boeing</label>
+                    <label><input type="radio" name="q2"> Lockheed Martin</label>
+                </div>
+            </div>
+
+            <!-- Third Question -->
+            <div class="quiz-question">
+                <h4>3. What is the main purpose of an airplane’s black box?</h4>
+                <div class="quiz-options">
+                    <label><input type="radio" name="q3"> To record flight data</label>
+                    <label><input type="radio" name="q3"> To store emergency supplies</label>
+                    <label><input type="radio" name="q3"> To power the aircraft</label>
+                </div>
+            </div>
+
+            <!-- Fourth Question -->
+            <div class="quiz-question">
+                <h4>4. What is the maximum speed of the Concorde?</h4>
+                <div class="quiz-options">
+                    <label><input type="radio" name="q4"> Mach 2.04</label>
+                    <label><input type="radio" name="q4"> Mach 1.5</label>
+                    <label><input type="radio" name="q4"> Mach 0.85</label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- To-do List -->
+    <section id="todo">
+        <h2 style="text-align: center; margin: 20px;">To-do List</h2>
+        <div class="todo-list">
+            <!-- Input Field for adding new tasks -->
+            <div class="todo-input">
+                <input type="text" id="newTask" placeholder="Enter a new task" style="width: 70%;">
+                <button id="addTaskBtn">Add</button>
+            </div>
+            <!-- To-do items will be added here -->
+            <div id="todoItemsContainer">
+                <div class="todo-item">
+                    <input type="checkbox">
+                    <label>Buy groceries</label>
+                    <button class="delete-btn" onclick="this.parentElement.remove()">Delete</button>
+                </div>
+    
+                <div class="todo-item">
+                    <input type="checkbox">
+                    <label>Complete homework</label>
+                    <button class="delete-btn" onclick="this.parentElement.remove()">Delete</button>
+                </div>
+    
+                <div class="todo-item">
+                    <input type="checkbox">
+                    <label>Go for a walk</label>
+                    <button class="delete-btn" onclick="this.parentElement.remove()">Delete</button>
+                </div>
+            </div>
+        </div>
+    </section>
+<script src="funcs.js"></script>    
+
+</body>
+</html>

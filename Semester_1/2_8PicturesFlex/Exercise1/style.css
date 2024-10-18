@@ -1,0 +1,63 @@
+body {
+    position: relative; 
+    margin: 0; 
+    overflow: hidden; 
+    background-color: rgb(37, 37, 27);
+    height: 100vh;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    animation: start_anim 1s ease-in-out;
+}
+
+@keyframes start_anim 
+{
+    from
+    {
+        opacity: 0;
+        filter: blur(5px);
+    }
+    to
+    {
+        opacity: 1;
+        filter: blur(0px);
+    }
+}
+
+.container div {
+    display: flex;
+    flex: 1 1 33.33%; 
+}
+
+.container div img {
+    height: 33.3vh;
+    width: 33.3vw;
+    object-fit: cover;
+}
+
+#picGRP3 img:nth-child(1) {
+    flex: 2 1 50vw;
+    height: 33.3vh;
+}
+
+#picGRP3 img:nth-child(2) {
+    flex: 1 1 50vw;
+    height: 33.3vh;
+}
+
+#picGRP5 img:nth-child(1) {
+    flex: 2 1 50vw;
+    height: 33.3vh;
+}
+
+#picGRP6 img:nth-child(2) {
+    flex: 1 1 50vw;
+    height: 33.3vh;
+}

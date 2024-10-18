@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS Grid Enhanced Layout</title>
+</head>
+<body>
+    <!-- Sidebar and Main Content -->
+    <div class="layout-grid">
+        <div class="sidebar">
+            <h2>Dashboard Menu</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <h2>Welcome to Your Dashboard</h2>
+            <p>Here is where you can manage all your activities and settings. Customize your preferences, review statistics, and track your progress.</p>
+            <div class="featured-content">
+                <h3>Featured</h3>
+                <p>Take a look at the latest features and updates added to your dashboard.</p>
+                <button>Explore Features</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Simple Dashboard -->
+    <section class="dashboard">
+        <header class="dashboard-header">
+            <h1>Aviation Admin Dashboard</h1>
+        </header>
+        <div class="dashboard-grid">
+            <aside class="dashboard-sidebar">
+                <h2>Flight Statistics</h2>
+                <div class="stat-box">
+                    <p><strong>Total Flights:</strong> 1,245</p>
+                    <p><strong>Total Revenue:</strong> $58,000</p>
+                    <p><strong>New Flight Bookings:</strong> 342</p>
+                </div>
+            </aside>
+            <div class="dashboard-main">
+                <h2>Recent Flight Activity</h2>
+                <div class="stat-box">
+                    <p><strong>John:</strong> Updated flight schedule</p>
+                    <p><strong>Sarah:</strong> Uploaded new aircraft photos</p>
+                    <p><strong>Mike:</strong> Submitted monthly safety report</p>
+                </div>
+            </div>
+            <div class="dashboard-notifications">
+                <h2>Flight Notifications</h2>
+                <div class="stat-box">
+                    <p><strong>New:</strong> You have 5 unread messages from pilots gc</p>
+                    <p><strong>Reminder:</strong> Deadline for submitting the flight crew schedule is tomorrow</p>
+                    <p><strong>Alert:</strong> Aircraft maintenance scheduled for Friday</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Responsive Photo Section -->
+    <section class="photo-gallery">
+        <h2>Photos of clouds</h2>
+        <div class="gallery-grid">
+            <img src="https://img.freepik.com/free-photo/cloud-blue-sky_1150-35749.jpg" alt="Image 1">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/94/Cloud.jpg" alt="Image 2">
+            <img src="https://images.unsplash.com/photo-1509803874385-db7c23652552?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8fA%3D%3D" alt="Image 3">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Cumulus_cloud.jpg" alt="Image 4">
+        </div>
+    </section>
+
+    <!-- Product Page -->
+    <section class="product-page">
+        <div class="product-container">
+            <div class="product-image">
+                <img src="https://cf-images.us-east-1.prod.boltdns.net/v1/static/1239686373001/ef808ce3-b75e-4358-80ff-151ff892075a/747bc044-5ffc-4c9f-8aff-22fd6d41242f/1280x720/match/image.jpg" alt="Product Image">
+            </div>
+            <div class="product-details">
+                <h2>Bose A20 Aviation Headset</h2>
+                <p class="price">$100</p>
+                <p class="description">The Bose A20 Aviation Headset is a premium product designed for pilots and aviation enthusiasts. It features 
+                    advanced noise cancellation technology, which significantly reduces ambient noise, allowing for clear communication and a more 
+                    enjoyable flying experience. Its lightweight and comfortable design ensure that you can wear it for long periods without discomfort.
+                    This is a great product with amazing features that will improve your daily life. It’s made from high-quality materials and is 
+                    available for a limited time only.</p>
+                <button class="buy-now">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiz Layout -->
+<section id="quiz" class="quiz-task">
+    <h2 style="text-align: center; margin: 20px;">Airplane Knowledge Quiz</h2>
+    <div class="quiz-grid">
+        <!-- Question 1 -->
+        <div class="question">1. What is the primary function of an airplane's wing flaps?</div>
+        <div class="choices-grid">
+            <div class="choice" data-correct="true">Increase lift during takeoff and landing</div>
+            <div class="choice" data-correct="false">Reduce drag</div>
+            <div class="choice" data-correct="false">Enhance fuel efficiency</div>
+            <div class="choice" data-correct="false">Improve cabin pressure</div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">2. Which part of the airplane is primarily responsible for stabilizing the aircraft in flight?</div>
+        <div class="choices-grid">
+            <div class="choice" data-correct="false">The landing gear</div>
+            <div class="choice" data-correct="false">The rudder</div>
+            <div class="choice" data-correct="true">The tail or horizontal stabilizer</div>
+            <div class="choice" data-correct="false">The cockpit</div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question">3. Which of the following is NOT a factor in determining an airplane's ability to lift off?</div>
+        <div class="choices-grid">
+            <div class="choice" data-correct="false">Air density</div>
+            <div class="choice" data-correct="false">Weight of the aircraft</div>
+            <div class="choice" data-correct="true">Fuel octane rating</div>
+            <div class="choice" data-correct="false">Wing design</div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question">4. At what altitude does commercial airplane cabin pressure typically stabilize?</div>
+        <div class="choices-grid">
+            <div class="choice" data-correct="false">10,000 feet</div>
+            <div class="choice" data-correct="false">30,000 feet</div>
+            <div class="choice" data-correct="true">8,000 feet</div>
+            <div class="choice" data-correct="false">15,000 feet</div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question">5. What is the purpose of an airplane's black box?</div>
+        <div class="choices-grid">
+            <div class="choice" data-correct="true">To record flight data and cockpit conversations</div>
+            <div class="choice" data-correct="false">To control airplane systems</div>
+            <div class="choice" data-correct="false">To monitor fuel levels</div>
+            <div class="choice" data-correct="false">To detect weather conditions</div>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question">6. Which airplane was the first to break the sound barrier?</div>
+        <div class="choices-grid">
+            <div class="choice" data-correct="false">Boeing 747</div>
+            <div class="choice" data-correct="false">Concorde</div>
+            <div class="choice" data-correct="true">Bell X-1</div>
+            <div class="choice" data-correct="false">F-16 Fighting Falcon</div>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="question">7. What is the name of the current largest commercial airplane?</div>
+        <div class="choices-grid">
+            <div class="choice" data-correct="false">Boeing 777</div>
+            <div class="choice" data-correct="true">Airbus A380</div>
+            <div class="choice" data-correct="false">Boeing 787 Dreamliner</div>
+            <div class="choice" data-correct="false">Cessna Citation</div>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="question">8. Which control surface is used to make an airplane roll left or right?</div>
+        <div class="choices-grid">
+            <div class="choice" data-correct="false">Rudder</div>
+            <div class="choice" data-correct="true">Ailerons</div>
+            <div class="choice" data-correct="false">Elevator</div>
+            <div class="choice" data-correct="false">Flaps</div>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="question">9. Which of the following is a type of aircraft engine?</div>
+        <div class="choices-grid">
+            <div class="choice" data-correct="true">Turbojet</div>
+            <div class="choice" data-correct="false">Propeller-gear</div>
+            <div class="choice" data-correct="false">Electro-jet</div>
+            <div class="choice" data-correct="false">Exhaustor</div>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="question">10. What is the name given to the effect that keeps airplanes in the air?</div>
+        <div class="choices-grid">
+            <div class="choice" data-correct="false">Gravity</div>
+            <div class="choice" data-correct="false">Thrust</div>
+            <div class="choice" data-correct="true">Lift</div>
+            <div class="choice" data-correct="false">Drag</div>
+        </div>
+    </div>
+</section>
+    <script src="quizScript.js"></script>
+</body>
+</html>

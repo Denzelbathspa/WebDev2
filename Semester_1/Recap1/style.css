@@ -1,0 +1,21 @@
+.Body 
+{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+#HeadingGlow
+{
+    text-align: center;
+}
+
+#HeadingGlow:hover
+{
+    color: red;
+}
+
+#photo
+{
+    align-items: center;
+}
